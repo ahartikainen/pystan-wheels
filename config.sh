@@ -14,6 +14,11 @@ function pre_build {
     pip install -r $SRC_DIR/requirements.txt
 }
 
+function build_wheel {
+    # Override common_utils build_wheel function to fix version error
+    build_bdist_wheel $@
+}
+
 function run_tests {
     SRC_DIR=../pystan
     echo "sanity checks"
