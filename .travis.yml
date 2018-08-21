@@ -102,6 +102,8 @@ install:
     - travis_wait 40 build_wheel $REPO_DIR $PLAT
 
 script:
+    # this next line is for debugging
+    - python -c'import pystan;pystan.StanModel(model_code="parameters {real y;} model {y ~ normal(0,1);}", verbose=True)'
     - install_run $PLAT
 
 after_success:
