@@ -5,7 +5,7 @@ env:
       - BUILD_DEPENDS=Cython
       - TEST_DEPENDS=
       - MB_ML_VER=2014
-      - DOCKER_TEST_IMAGE=multibuild/xenial_x86_64
+      - DOCKER_TEST_IMAGE=matthewbrett/trusty:64
       - PLAT=x86_64
       - UNICODE_WIDTH=32
       - NP_BUILD_DEP=1.8.2
