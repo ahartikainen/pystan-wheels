@@ -3,4 +3,4 @@
 	url = https://github.com/matthew-brett/multibuild
 [submodule "pystan"]
 	path = pystan
-	url = https://github.com/stan-dev/pystan
+	url = https://github.com/ahartikainen/pystan
